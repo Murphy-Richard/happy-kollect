@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "HAMIS DQA - Jobberman",
   "short_name": "HAMIS DQA",
@@ -21,4 +22,73 @@
       "purpose": "any maskable"
     }
   ]
+=======
+{
+  "name": "HAMIS DQA - Jobberman",
+  "short_name": "HAMIS DQA",
+  "description": "Offline-capable field data collection for participant onboarding, training, and placement tracking",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Onboarding",
+      "short_name": "Onboard",
+      "description": "Register new participants",
+      "url": "/index.html?tab=onboarding",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Capacity Building",
+      "short_name": "Training",
+      "description": "Record training sessions",
+      "url": "/index.html?tab=capacity",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Placement",
+      "short_name": "Placement",
+      "description": "Record job placements",
+      "url": "/index.html?tab=placement",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files": [
+        {
+          "name": "records",
+          "accept": ["application/json", "text/csv"]
+        }
+      ]
+    }
+  }
+>>>>>>> aecebdf (Update app with new features)
 }
