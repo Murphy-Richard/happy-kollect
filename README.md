@@ -237,4 +237,4 @@ service cloud.firestore {
 --- 
 
 **End of README**
->>>>>>> aecebdf (Update app with new features)
+>>>>>>> **`murphy-richards`** (Update app with new features)
